@@ -4,6 +4,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -23,15 +24,12 @@ a {
 
 .title {
   text-align: center;
-  margin: 20px 400px;
+  margin: 20px 300px;
 }
 
 .image-block {
-  display: grid;
-  grid-template-columns: 300px 300px 300px 300px 300px 300px;
-  grid-gap: 10px;
+  font-display: flex;
   margin-top: 40px;
-  justify-content: center;
 }
 
 .image {
@@ -39,46 +37,36 @@ a {
   background-color: rgba(255, 255, 255, 0.299);
   padding: 25px 18px;
   border-radius: 3px;
+  width: 250px;
 }
 
 @media only screen and (max-width: 1950px) {
-  .image-block {
-    grid-template-columns: 300px 300px 300px 300px 300px;
-  }
-
   .title {
     margin: 20px 150px;
   }
 }
 
 @media only screen and (max-width: 1620px) {
-  .image-block {
-    grid-template-columns: 280px 280px 280px 280px;
-    margin-top: 30px;
-  }
-
   .title {
     margin: 20px 100px;
+  }
+
+  .image {
+    width: 180px;
   }
 }
 
 @media only screen and (max-width: 1240px) {
   .image-block {
-    grid-template-columns: 230px 230px 230px 230px;
     margin-top: 30px;
   }
 
   .title {
-    margin: 20px 100px;
+    margin: 20px 50px;
   }
 }
 
 @media only screen and (max-width: 1015px) {
-  .image-block {
-    grid-template-columns: 220px 220px 220px;
-    margin-top: 30px;
-  }
-
   .title {
     margin: 20px 20px;
   }
@@ -86,21 +74,24 @@ a {
   h1 {
     font-size: 27px;
   }
-}
 
-@media only screen and (max-width: 712px) {
-  .image-block {
-    grid-template-columns: 170px 170px 170px;
+  .image {
+    width: 135px;
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .image-block {
-    grid-template-columns: 140px 140px;
-    margin-top: 30px;
-  }
-
+@media only screen and (max-width: 425px) {
   .title {
-    margin: 0 20px;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    margin: 0 10px;
+  }
+
+  .image {
+    width: 110px;
   }
 }
